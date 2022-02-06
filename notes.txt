@@ -1,0 +1,10 @@
+https://angular.io/
+
+npm install -g @angular/cli
+
+// create app
+ng new task-tracker
+
+// run dev server
+ng serve
+
