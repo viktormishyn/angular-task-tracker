@@ -8,6 +8,11 @@ ng new task-tracker
 // run dev server
 ng serve
 
+// generate component
+ng generate component components/tasks
+// generate service
+ng generate service services/task
+
 // install FontAwesome
 ng add @fortawesome/angular-fontawesome
 // choose all free icons
