@@ -13,7 +13,7 @@ export class TasksComponent implements OnInit {
   constructor(private taskService: TaskService) {}
 
   ngOnInit(): void {
-    this.tasks = this.taskService.getTasks();
-    // TODO: should be replaced with observables
+    this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
+    // http client returns the Observable, so the usage would be the same
   }
 }
